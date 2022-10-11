@@ -2,6 +2,7 @@
 
 <p>Projeto em grupo onde o objetivo é desenvolver um website para apresentar um novo produto lançado pela empresa Frontenders, onde mostre qual é o produto ,
 para que os usuários possam utilizá-lo e os planos de assinatura deste serviço.</p>
+<br>
 
 <h3><span>Requisitos:<span></h3> 
 
