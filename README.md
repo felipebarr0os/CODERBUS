@@ -23,12 +23,12 @@ para que os usuários possam utilizá-lo e os planos de assinatura deste serviç
  
  <h3>Ferramentas utilizadas no projeto:</h3>
 
-   <p>API;</p>
-    <p>CSS;</p>
-     <p>HTML;</p>
-      <p>GITHUB;</p>
-       <p>JAVASCRIPT;</p>
-        <p>BOOTSTRAP.</p>
+   <p>⇨API;</p>
+    <p>⇨CSS;</p>
+     <pHTML⇨;</p>
+      <pGITHUB⇨;</p>
+       <pJAVASCRIPT⇨;</p>
+        <p>⇨BOOTSTRAP.</p>
 <br>
  <h3>Status do projeto:</h3>
   <p>Em andamento.</p>
