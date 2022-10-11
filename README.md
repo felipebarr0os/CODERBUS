@@ -8,6 +8,7 @@ para que os usuários possam utilizá-lo e os planos de assinatura deste serviç
   <p>⇨ O framework CSS Bootstrap deve ser utilizado na elaboração do projeto (versão 4 ou superior);</p> 
    <p>⇨ A API ViaCEP deve ser utilizada para obter dados referentes aos CEPs utilizados no cadastro;</p>
     <p>⇨ Utilizar repositório público no github, com todos os integrantes do grupo como colaboradores e disponibilização de uma Github Page com o projeto.</p>
+  <br>
 
  <h3>Demais detalhes pedidos:</h3>
 
@@ -17,6 +18,7 @@ para que os usuários possam utilizá-lo e os planos de assinatura deste serviç
       <p>⇨Página de cadastro na lista de espera;</p>
        <p>⇨Página de contato;</p>
         <p>⇨Página de login e uma para recuperação de senha.</p>
+  <br>
  
  <h3>Ferramentas utilizadas no projeto:</h3>
 
@@ -26,7 +28,7 @@ para que os usuários possam utilizá-lo e os planos de assinatura deste serviç
       <p>GITHUB;</p>
        <p>JAVASCRIPT;</p>
         <p>BOOTSTRAP.</p>
-
+<br>
  <h3>Status do projeto:</h3>
   <p>Em andamento.</p>
 
