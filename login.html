@@ -7,13 +7,15 @@
     <!--menu estilo padrão todas as páginas-->
     <title>CODERBUS</title>
     <link class="icon" rel="icon" href="img/Oni.png">
-    <link rel="stylesheet" href="css/login-estilo.css">
+    <link rel="stylesheet" href="./css/login-estilo.css">
+    
+	 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
     </style>
 </head>
 <body>
-        <!--links das paginas-->
+    <!--links das paginas-->
     <header>
         <div class="container">
         <div class="foto"><img src="img/onibus.png"></div>
@@ -21,29 +23,55 @@
         <nav class="navegation">
             <ul>
                 <li class="l1"><a href="index.html" >Home</a></li>
-                <li class="l2"><a href="# " >Serviços</a></li>
-                <li class="l3"><a href="login.html" >Faça login</a></li>
+                <li class="l2"><a href="#" >Serviços</a></li>
+                <li class="l3"><a href="html/cadastro.html" >Faça login</a></li>
                 <li class="l4"><a href="cadastro.html" >Cadastro</a></li>
                 <li class="l5"><a href="equipe.html" >Conheça a equipe</a></li>
 
             </ul>
         </div>
-      <!--fim menu estilo padrão todas as páginas-->
           
+    </div>
+    </nav>  <!--fim menu estilo padrão todas as páginas-->
+          
+     
         
-          </section>
-            
-      <!--início rodapé simples-->
-            <footer>
+      <!---caixa de login-->
+     
+    <form>
+        <h1 class="">Login</h1>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit"  onclick="logar(); return false">
+        <button class="btn  btn-block">Esqueci senha </button>
+
+    </form>
+
+
+
+
+
+
+
+
+<!--fim caixa de login-->
+   
+     
+            <footer> <!--início rodapé simples-->
                 <p>&copy;  Todos os direitos reservados.</p>
                 <p>Squad: Raquel Sacramento, Andrielly, Taís, Felipe e Raísha Tinoco.</p>
-            </footer>
-      <!--fim rodapé simples-->      
-        </nav>
-       
-    </div>
+            </footer><!--fim rodapé simples-->    
+        
+      
+     
     </header>
 
- <script src="script/nossaequipe.js"></script>   
+
+
+
+
+
+
+ <script src="script/login.js"></script>   
 </body>
 </html>
