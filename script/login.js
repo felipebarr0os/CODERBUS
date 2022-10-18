@@ -6,7 +6,7 @@
 
             if(login == "admin" && senha == "admin"){
                 alert('Sucesso');
-                location.href = "home.html";
+                location.href = "index.html";
             }else{
                 alert('Usuario ou senha incorretos');
             }
