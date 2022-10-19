@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--menu estilo padrão todas as páginas-->
     <title>CODERBUS</title>
     <link class="icon" rel="icon" href="img/Oni.png">
     <link rel="stylesheet" href="./css/login-estilo.css">
+
     
 	 
     <style>
@@ -15,6 +17,7 @@
     </style>
 </head>
 <body>
+    
     <!--links das paginas-->
     <header>
         <div class="container">
@@ -33,7 +36,7 @@
           
     </div>
     </nav>  <!--fim menu estilo padrão todas as páginas-->
-          
+</header>  
      
         
       <!---caixa de login-->
@@ -47,15 +50,24 @@
 
     </form>
 
-
-
-
-
-
-
-
 <!--fim caixa de login-->
    
+
+
+<!--Botão de acessibilidade para pessoas com PCD-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+
      
             <footer> <!--início rodapé simples-->
                 <p>&copy;  Todos os direitos reservados.</p>
@@ -64,12 +76,7 @@
         
       
      
-    </header>
-
-
-
-
-
+   
 
 
  <script src="script/login.js"></script>   
