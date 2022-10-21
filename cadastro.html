@@ -1,48 +1,217 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--menu estilo padrão todas as páginas-->
-    <title>CODERBUS</title>
-    <link class="icon" rel="icon" href="img/Oni.png">
-    <link rel="stylesheet" href="css/login-estilo.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link class="icon" rel="icon" href="image/bus2.png">
+    <link href="css/cadastro.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>Cadastro | CoderBus</title>
 </head>
+
 <body>
+
     <header>
-        <div class="container">
-        <div class="foto"><img src="img/onibus.png"></div>
+        <!-- Barra de menu com link das páginas-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="foto"><img src="image/bus2.png" width="170" height="120" alt="Logo CoderBus"></div>
+            <a class="navbar-brand" href="#">CODERBUS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <nav class="navegation">
-            <ul>
-                <li class="l1"><a href="index.html">Home</a></li>
-                <li class="l2"><a href="# " >Serviços</a></li>
-                <li class="l3"><a href="login.html" >Faça login</a></li>
-                <li class="l4"><a href="cadastro.html" >Cadastro</a></li>
-                <li class="l5"><a href="equipe.html" >Conheça a equipe</a></li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Nossa equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar 🔎" aria-label="Search">
 
-            </ul>
-        </div>
-      <!--fim menu estilo padrão todas as páginas-->
-          
-        
-          </section>
-            
-      <!--início rodapé simples-->
-            <footer>
-                <p>&copy;  Todos os direitos reservados.</p>
-                <p>Squad: Raquel Sacramento, Andrielly, Taís, Felipe e Raísha Tinoco.</p>
-            </footer>
-      <!--fim rodapé simples-->      
+                </form>
+
+            </div>
         </nav>
-       
-    </div>
     </header>
 
- <script src="script/nossaequipe.js"></script>   
+     <!-- ÁREA PRINCIPAL DA PÁGINA (onde colocar o código)-->
+     
+    <main>
+
+        <div class="container-cadastro">
+            <form id="forms-cadastro">
+                <h2>LISTA DE ESPERA</h2>
+                <hr />
+                <h1>Cadastre-se agora!</h1>
+
+                <label for="name">Nome Completo: </label>
+                <input type="text" id="name" placeholder="Nome" required />
+
+                <label for="input_email">E-mail:</label>
+                <input type="email" name="input-email" id="email" placeholder="E-mail" value='' required />
+
+                <label for="input_senha">Sua senha:</label>
+                <input type="password" name="input_pass" id="pass" placeholder="Crie sua senha" value='' required>
+
+                <label for="input_senha">Confirmação de senha: </label>
+                <input type="password" name="input_pass" id="confirm" placeholder="Repita a senha" value='' required />
+
+                <div class="docs">
+                    <div id="docschild1">
+                        <label for="input_rg">RG:</label>
+                        <input type="text" name="input_id" id="rg-mask" placeholder="Ex.: 00.000.000-0" minlength="9"
+                            maxlength="9" required />
+                    </div>
+
+                    <div id="docschild2">
+                        <label for="input_cpf">CPF:</label>
+                        <input type="text" name="input_cpf" id="cpf-mask" placeholder="Ex.: 000.000.000-00"
+                            minlength="11" maxlength="11" required />
+                    </div>
+                </div>
+                <div class="endereco1">
+                    <form method="get" action=".">
+                        <div class="child1"><label>CEP:
+                                <input name="input_cep" type="text" id="cep" value="" size="10" maxlength="9"
+                                    onblur="pesquisacep(this.value);" /></label></div>
+                        <div><label>Logradouro:
+                                <input name="rua" type="text" id="rua" /></label></div>
+                </div>
+                <div class="endereco1">
+                    <div><label>Bairro:
+                            <input name="bairro" type="text" id="bairro" /></label></div>
+                    <div><label>Cidade:
+                            <input name="cidade" type="text" id="cidade" /></label></div>
+                </div>
+                <div><label>Estado:
+                        <input name="uf" type="text" id="uf" /></label></div>
+                <label>
+                    <div><input name="ibge" type="text" id="ibge" />
+                </label>
+        </div>
+        <button class="btn-cadastro" id="btn-cadastro">Cadastrar</button>
+        </form>
+        </div>
+
+        </form>
+        </div>
+    </main>
+     <!-- Fim da área de códigos -->
+
+
+    <!-- Footer do bootstrap - Rodapé -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./index.html" class="text-white">Início</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./contato.html" class="text-white">Nossa equipe</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./servicos.html" class="text-white">Serviços</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./cadastro.html" class="text-white">Cadastro</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./login.html" class="text-white">Login</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-6">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            CoderBus <br>
+                            Levando você até o seu destino:
+                            O SUCESSO!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-white" href="./contato.html">FrontEnders.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Fim rodapé -->
+
+
+
+    <!-- Scripts -->
+    <script src="./scripts/cadastro.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
+Footer
+© 2022 GitHub, Inc.
