@@ -1,96 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/serviço.css" type="text/css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--menu estilo padrão todas as páginas-->
-    <title>CODERBUS</title>
-    <link class="icon" rel="icon" href="img/Oni.png">
-    <link rel="stylesheet" href="css/serviço.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link class="icon" rel="icon" href="image/onibuslogo-sembg.ico">
+    <title>Serviços | CoderBus</title>
+   
 </head>
+
 <body>
-<div class="principio">
-  <header>
-    <div class="container">
-      <div class="foto"><img src="img/onibus.png"></div>
-        <nav class="navegation">
-            <ul>
-                <li class="l1"><a href="index.html">Home</a></li>
-                <li class="l2"><a href="login.html" >Faça login</a></li>
-                <li class="l3"><a href="serviço.html" >Serviço</a></li>
-                <li class="l4"><a href="cadastro.html" >Cadastro</a></li>
-                <li class="l5"><a href="equipe.html" >Conheça a equipe</a></li>
-            </ul>
-    </div>
-  </header>
-      <!--fim menu estilo padrão todas as páginas-->
-      <!--Resumo sobre o produto/Conteudo e os planos para contratar-->
-<section>
-    <div class="conteudo">
-        <h2>The FrontEnders</h2>
-        <p>Está procurando algo que possa facilitar sua vida de programador(a)?<b> Você está no lugar certo!</b> Nós do grupo FrontEndrs trabalhamos duro para desenvolver um produto de melhor qualidade para você nosso cliente! Estamos lançando o nosso novo aplicativo para você programar de qualquer lugar! Isso mesmo, você não vai mais precisar esperar estar em casa sentado para codar!</p> 
-        <br>
-    </div>
-        <hr></hr>
-    <div class="contai">
-        <p><b>Confira nossos planos logo abaixo!</b></p>
-    </div>
-    <div class="planos">
-      <div class="planos1">
-      <h2 style="text-align:center">Plano Gratuito</h2>
-       <div class="card">
-        <img class="carde" src="images/htmlecss.png" alt="HTML e CSS" style="width:100%">
-          <p>No plano gratuito você terá acesso ao básico para começar a programar, aqui você aprenderá HTML e CSS!</p>
-            <p><button>Contratar</button></p>
-      </div>
-      </div>
-    <br>
-    <div class="planos2">
-      <h2 style="text-align:center">Plano Básico</h2>
-       <div class="card">
-        <img class="carde" src="images/js html css.png" alt="HTML, CSS e JS" style="width:100%">
-          <p>-HTML -CSS -JAVASCRIPT</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-            <p class="price">$24.99</p>
-            <p><button>Contratar</button></p>
-       </div>
-    </div>
-    <div class="planos3">
-      <h2 style="text-align:center">Plano Padrão</h2>
-       <div class="card">
-        <img class="carde" src="images/js html css.png" alt="HTML, CSS e JS" style="width:100%">
-          <p>-HTML -CSS -JAVASCRIPT</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-            <p class="price">$24.99</p>
-            <p><button>Contratar</button></p>
-       </div>
-    </div>
-    <div class="planos4">
-      <h2 style="text-align:center">Plano SpaceBus</h2>
-       <div class="card">
-        <img class="carde" src="images/js html css.png" alt="HTML, CSS e JS" style="width:100%">
-          <p>-HTML -CSS -JAVASCRIPT</p>
-            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-            <p class="price">$24.99</p>
-            <p><button>Contratar</button></p>
-       </div>
-    </div>
-    </div>
-    <br>
-</section> 
-      <!--início rodapé simples-->
-<footer>
-    <p class="rodape">&copy;  Todos os direitos reservados.</p>
-    <p class="rodape">Squad: Raquel Sacramento, Andrielly Moura, Taís Campos, Felipe Barros e Raísha Tinoco.</p>
-</footer>
-      <!--fim rodapé simples-->      
+    <header>
+        <!-- Barra de menu com link das páginas-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="foto"><img src="image/icon-onibuslogo.ico" width="170" height="120" alt="Logo CoderBus"></div>
+            <a class="navbar-brand" href="#">CODERBUS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Nossa equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar 🔎" aria-label="Search">
+
+                </form>
+            </div>
         </nav>
-  </div>
-</div>
- <script src="serviço.js"></script>   
+    </header>
+    <main>
+        <div class="conteudo">
+            <h2>The FrontEnders</h2>
+            <p>Está procurando algo que possa facilitar sua vida de programador(a)? Você está no lugar certo! Nossa empresa FrontEndrs trabalhamos duro para desenvolver um produto de melhor qualidade para você nosso cliente! Estamos lançando o nosso novo aplicativo para você programar de qualquer lugar! Isso mesmo, você não vai mais precisar esperar estar em casa sentado para codar!</p>
+            <br>
+            <p>Pensando em facilitar o caminho para os novos programadores que estão por vir, os desenvolvedores de software da nossa equipe prepararam uma ferramenta que possa te ajudar a começar nessa trajetória. Pensando na vida corrida e com muitos compromissos, a The FrontEndrs desenvolveu um aplicativo para smartphones. No nosso aplicativo você terá lições simples e explicativas para que possa compreender o conteúdo dado. São lições rápidas para fazer a curto prazo separadas por etapas e organizadas por níveis.</p>
+          </div>
+          <hr>
+        <div class="cardes">
+            <div class="card blue">
+                <h3><b>Plano Gratuito</b></h3>
+                <img src="images/htmlecss.png" width="80%" height="68%">
+                <h5><b>Incluso: -HTML -CSS</b></h5>
+                <h5>Neste plano você tem acesso ao básico para começar a programar, aqui você aprenderá HTML e CSS.</h5>
+                <button id="mybtn">Contratar Plano</button>
+            </div>
+            <div class="card blue">
+                <h3><b>Plano Básico</b></h3>
+                <img  src="images/jspython.png" width="90%" height="58%">
+                <h5><b>Incluso: -HTML -CSS -JAVASCRIPT -PYTHON</b></h5>
+                <h5>Neste plano você tem acesso às linguagens de programação Javascript e Python.</h5>
+                <p class="price"><b>$19.99</b></p>
+                <button id="mybtn2">Contratar Plano</button>
+    </div>
+            <div class="card blue">
+                <h3><b>Plano SpaceBus</b></h3>
+                <img src="images/jspythonc-removebg-preview.png" width="100%" height="60%">
+                <h5><b>Incluso: -HTML -CSS -JAVASCRIPT -PYTHON -C++</b></h5>
+                <h5>Neste plano você tem acesso às linguagens de programação Javascript, Python e C++.</h5>
+                <p class="price"><b>$25.99</b></p>
+                <button id="mybtn3">Contratar Plano</button>
+            </div>
+            <div class="card blue">
+                <h3><b>Plano SpaceBus Pro</b></h3>
+                <img src="images/jsjvpythonc.png" width="80%" height="60%">
+                <h5><b>Incluso: -HTML -CSS -JAVASCRIPT -JAVA -PYTHON -C++</b></h5>
+                <h5>Neste plano você tem acesso às linguagens de programação Javascript, JAVA, Python e C++.</h5>
+                <p class="price"><b>$31.99</b></p>
+                <button id="mybtn4">Contratar Plano</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="conteudo">
+            <h6>Mais detalhes sobre os planos!</h6>
+            <p>Nossos planos são mensais, você paga uma vez ao mês e o renova conforme a virada do mês, não temos contrato anual, não pagando o próximo mês seu plano será cancelado até que você faça o pagamento para renovar o prazo por mais um mês.
+                Em todos os nossos planos o HTML e CSS estarão incluídos como padrão, então caso você queira praticar ou ver as lições dentro do plano contratado poderá acessar a qualquer momento.
+                Os pagamentos estão disponíveis até o momento em cartão de crédito ou boleto bancário.
+                </p>
+            <br>
+        </div>
+        
+    </main>
+
+<br>
+<br>
+<br>
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./index.html" class="text-white">Início</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./contato.html" class="text-white">Nossa equipe</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./servicos.html" class="text-white">Serviços</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./cadastro.html" class="text-white">Cadastro</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./login.html" class="text-white">Login</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-6">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            CoderBus <br>
+                            Levando você até o seu destino:
+                            O SUCESSO!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Social -->
+            <section class="text-center mb-5">
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">FrontEnders.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!--fim rodapé simples-->
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+        <script src="script/serviço.js"></script>
 </body>
+
 </html>
