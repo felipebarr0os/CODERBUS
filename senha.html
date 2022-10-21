@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link class="icon" rel="icon" href="image/onibuslogo-sembg.ico">
+    <link rel="stylesheet" href="css/login.css">
+ 
+    <title>Login | CoderBus</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de menu com link das páginas-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="foto"><img src="images/onibuslogo-sembg.ico" width="170" height="120" alt="Logo CoderBus"></div>
+            <a class="navbar-brand" href="#">CODERBUS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Nossa equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar 🔎" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+
+        <li class="nav-item">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                    <form
+                    class="col-12 gap-3 gap-lg-5 d-flex flex-column p-0"
+                    data-main-content
+                  >
+                    <p class="text-white secondary-text">
+                      Enviaremos um email com instruções de como redefinir sua senha.
+                    </p>
+                    <label for="validation__email" class="form-label text-white"
+                      >E-mail:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control input border-15 w-100"
+                      id="validation__email"
+                      required
+                      placeholder="seu@email.com.br"
+                      data-email
+                      name="email"
+                    />
+                    <button
+                      class="btn action-button border-15 mt-3 align-self-center justify-self-center"
+                      name="recovery-button"
+                      data-recovery-button
+                    >
+                      Recuperar
+                    </button>
+                    <p class="secondary-text mt-3">
+                      <a class="text-white border-bottom border-warning" href=""
+                        >Não lembro meu e-mail</a
+                      >
+                    </p>
+                  </form>
+                </div>
+                    
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <!-- ÁREA PRINCIPAL DA PÁGINA (onde colocar o código)-->
+<!--Recuperação de senha-->
+<br>
+<br>
+<br>
+<div class="container-fluid mt-5 mb-4">
+	<div class="row justify-content-center mt-5">
+		<section class="col-12 colsm-6 col-md-4">
+			<form class="form-container"><br>
+				<h4 class="">Recuperar senha</h4>
+				<div class="form-group input">
+					<input  required type="email" class="form-control" name="nome" placeholder="E-mail">
+					<span class="error"></span>
+				</div>
+				<button id="login" class="btn btn-primary btn-block">Recuperar</button>
+			</form>
+		</section>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script src="scripts/Darkmode.js"></script>
+<br>
+<br>
+<br>
+<br>
+  <!-- Footer do bootstrap - Rodapé -->
+  <footer class="text-center text-white" style="background-color: #3f51b5">
+    <!-- Grid container -->
+    <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+                <!-- Grid column -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./index.html" class="text-white">Início</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./contato.html" class="text-white">Nossa equipe</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./servicos.html" class="text-white">Serviços</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./cadastro.html" class="text-white">Cadastro</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="./login.html" class="text-white">Login</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-5" />
+
+        <!-- Section: Text -->
+        <section class="mb-6">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <p>
+                        CoderBus <br>
+                        Levando você até o seu destino:
+                        O SUCESSO!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Text -->
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="./contato.html">FrontEnders.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!--Fim rodapé -->
+
+</body>
+
+</html>
+
