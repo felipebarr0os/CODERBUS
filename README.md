@@ -33,7 +33,9 @@ para que os usuários possam utilizá-lo e os planos de assinatura deste serviç
       <p>⇨GITHUB;</p>
        <p>⇨JAVASCRIPT;</p>
         <p>⇨BOOTSTRAP.</p>
+
 <br>
  <h3>Status do projeto:</h3>
-  <p>Em andamento.</p>
+  <p> Concluído. </p>
+
 
